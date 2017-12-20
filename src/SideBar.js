@@ -1,8 +1,12 @@
 import React from 'react'
 
-const SideBar = (props) => (
+const SideBar = ({ users }) => (
   <aside id='sidebar'>
-    Users
+    <ul>
+       {users.map(user => (
+         <li key={user.id}> {user.name}</li>
+       ))}
+    </ul>
   </aside>
 )
 
