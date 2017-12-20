@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import  SideBar from './SideBar'
 
 class App extends Component {
   render() {
     return (
       <div id='container'>
-        <aside id='sidebar'>
-          Users
-        </aside>
+        <SideBar />
         <section id='main'>
-          <section id='message-list'></section>
-          <section id='new-message'></section>
+          <section id='message-list'>55</section>
+          <section id='new-message'>66</section>
         </section>
       </div>
     );
