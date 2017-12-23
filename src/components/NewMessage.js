@@ -10,7 +10,7 @@ const NewMessage = (props) => {
           console.log(e.key)
           if (e.key === 'Enter') {
             console.log(e.keyCode)
-            // props.dispatch(input.value, 'Me')
+            props.dispatch(input.value, 'Me')
             input.value = ''
           }
         }

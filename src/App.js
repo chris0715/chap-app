@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import  SideBar from './SideBar'
-import NewMessage from './components/newMessage'
-import Message from './message'
+import  SideBar from './containers/SideBar'
+import AddMessage from './containers/AddMessage'
+import MessageList from './containers/MessageList'
 
 
 
@@ -14,9 +14,9 @@ class App extends Component {
         <SideBar users={[{name: 'marcos'}]} />
         <section id='main'>
           <section id='message-list'>
-            <Message  author='tt' message='this is not true its just right' />
+            <MessageList />
           </section>
-          <NewMessage />
+          <AddMessage />
         </section>
       </div>
     );
